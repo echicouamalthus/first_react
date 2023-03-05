@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
 
+import NavBar from './NavBar';
+import Home from './Home';
+
 function App() {
+  //ici on écrit la partie logique du components
+
+  const title = ['malthus','echicoua','Elie'];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <div className="content">
+        <Home />
+      </div>
     </div>
   );
 }
